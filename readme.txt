@@ -6,20 +6,20 @@ Requires at least: 3.6
 Tested up to: 4.5
 Stable tag: 2.0.0
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Use any image from your WordPress Media Library as a custom user avatar. Add your own Default Avatar.
 
 == Description ==
 
-WordPress currently only allows you to use custom avatars that are uploaded through [Gravatar](http://gravatar.com/). **WP User Avatar** enables you to use any photo uploaded into your Media Library as an avatar. This means you use the same uploader and library as your posts. No extra folders or image editing functions are necessary.
+WordPress currently only allows you to use custom avatars that are uploaded through [Gravatar](https://gravatar.com/). **WP User Avatar** enables you to use any photo uploaded into your Media Library as an avatar. This means you use the same uploader and library as your posts. No extra folders or image editing functions are necessary.
 
 
 **WP User Avatar** also lets you:
 
 * Upload your own Default Avatar in your WP User Avatar settings.
-* Show the user's [Gravatar](http://gravatar.com/) avatar or Default Avatar if the user doesn't have a WP User Avatar image.
-* Disable [Gravatar](http://gravatar.com/) avatars and use only local avatars.
+* Show the user's [Gravatar](https://gravatar.com/) avatar or Default Avatar if the user doesn't have a WP User Avatar image.
+* Disable [Gravatar](https://gravatar.com/) avatars and use only local avatars.
 * Use the <code>[avatar_upload]</code> shortcode to add a standalone uploader to a front page or widget. This uploader is only visible to logged-in users.
 * Use the <code>[avatar]</code> shortcode in your posts. These shortcodes will work with any theme, whether it has avatar support or not.
 * Allow Contributors and Subscribers to upload their own avatars.
@@ -27,11 +27,11 @@ WordPress currently only allows you to use custom avatars that are uploaded thro
 
 **Introducing Support Desk**
 
-We're at [FlipperCode](http://www.flippercode.com/), committed to excellent support to make every download worth for the user. Happily announcing [Support Desk](http://www.flippercode.com/forums/) for our valuable users to engaged with multiple support desk person for fast turnout.
+We're at [FlipperCode](https://www.flippercode.com/), committed to excellent support to make every download worth for the user. Happily announcing [Support Desk](https://www.flippercode.com/forums/) for our valuable users to engaged with multiple support desk person for fast turnout.
 
 **Introducing Pro Version of WP USER AVATAR**
 
-We have developed a [Pro Version](http://www.flippercode.com/product/wp-user-avatar/)  of WP USER AVATAR by getting valuable features request from thousands of users especially about Storage options and how user upload the avatar. Here is a quick highlight on the numerous customizable features offered by the [WP USER AVATAR PRO](http://www.flippercode.com/product/wp-user-avatar/) .
+We have developed a [Pro Version](https://www.flippercode.com/product/wp-user-avatar/)  of WP USER AVATAR by getting valuable features request from thousands of users especially about Storage options and how user upload the avatar. Here is a quick highlight on the numerous customizable features offered by the [WP USER AVATAR PRO](https://www.flippercode.com/product/wp-user-avatar/) .
 
 <ul>
 <li>Easy Upload and Capture functionality with crop  avatar options.</li>
@@ -44,7 +44,7 @@ We have developed a [Pro Version](http://www.flippercode.com/product/wp-user-ava
 <li>Keep Avatars on Dropbox</li>
 <li>Keep Avatars in Media Manager</li>
 <li>Easy to use Settings to control every functionality.</li>
-<li>Multi-lingual, Multi-Site, BBPRESS and Buddypress Supported.</li>
+<li>Multi-lingual, Multi-Site, bbPress and BuddyPress Supported.</li>
 </ul>
 
 Innovative Way to Setup User Avatar : 
@@ -53,21 +53,21 @@ Innovative Way to Setup User Avatar :
 
 == Installation ==
 
-Visit [WP User Avatar](http://wpuseravatar.com/) for more information and documentation.
+Visit [WP User Avatar](https://wpuseravatar.com/) for more information and documentation.
 
 1. Download, install, and activate the WP User Avatar plugin.
 2. On your profile edit page, click "Edit Image".
 3. Choose an image, then click "Select Image".
 4. Click "Update Profile".
 5. Upload your own Default Avatar in your WP User Avatar settings (optional). You can also allow Contributors & Subscribers to upload avatars and disable Gravatar.
-6. Choose a theme that has avatar support. In your theme, manually replace <code>get_avatar</code> with <code>get_wp_user_avatar</code> or leave <code>get_avatar</code> as-is. [Read about the differences here](http://wordpress.org/extend/plugins/wp-user-avatar/faq/).
+6. Choose a theme that has avatar support. In your theme, manually replace <code>get_avatar</code> with <code>get_wp_user_avatar</code> or leave <code>get_avatar</code> as-is. [Read about the differences here](https://wordpress.org/plugins/wp-user-avatar/#faq).
 7. You can also use the <code>[avatar_upload]</code> and <code>[avatar]</code> shortcodes in your posts. These shortcodes will work with any theme, whether it has avatar support or not.
 
 **Example Usage**
 
 = Posts =
 
-Within [The Loop](http://codex.wordpress.org/The_Loop), you may be using:
+Within [The Loop](https://codex.wordpress.org/The_Loop), you may be using:
 
 `<?php echo get_avatar(get_the_author_meta('ID'), 96); ?>`
 
@@ -85,7 +85,7 @@ You can also add an alignment of "left", "right", or "center":
 
 = Author Page =
 
-On an author page outside of [The Loop](http://codex.wordpress.org/The_Loop), you may be using:
+On an author page outside of [The Loop](https://codex.wordpress.org/The_Loop), you may be using:
 
 `<?php
   $user = get_user_by('slug', $author_name); 
@@ -99,11 +99,11 @@ Replace this function with:
   echo get_wp_user_avatar($user->ID, 96);
 ?>`
 
-If you leave the options blank, WP User Avatar will detect whether you're inside [The Loop](http://codex.wordpress.org/The_Loop) or on an author page and return the correct avatar in the default 96x96 size:
+If you leave the options blank, WP User Avatar will detect whether you're inside [The Loop](https://codex.wordpress.org/The_Loop) or on an author page and return the correct avatar in the default 96x96 size:
 
 `<?php echo get_wp_user_avatar(); ?>`
 
-The function <code>get_wp_user_avatar</code> can also fall back to <code>get_avatar</code> if there is no WP User Avatar image. For this to work, "Show Avatars" must be checked in your WP User Avatar settings. When this setting is enabled, you will see the user's [Gravatar](http://gravatar.com/) avatar or Default Avatar.
+The function <code>get_wp_user_avatar</code> can also fall back to <code>get_avatar</code> if there is no WP User Avatar image. For this to work, "Show Avatars" must be checked in your WP User Avatar settings. When this setting is enabled, you will see the user's [Gravatar](https://gravatar.com/) avatar or Default Avatar.
 
 = Comments =
 
@@ -121,7 +121,7 @@ For comments, you must specify the $comment variable.
 
 = [avatar_upload] shortcode =
 
-You can use the <code>[avatar_upload]</code> shortcode to add a standalone uploader to a front page or widget. This uploader is only visible to logged-in users. If you want to integrate the uploader into a profile edit page, see [Other Notes](http://wordpress.org/plugins/wp-user-avatar/other_notes/).
+You can use the <code>[avatar_upload]</code> shortcode to add a standalone uploader to a front page or widget. This uploader is only visible to logged-in users. If you want to integrate the uploader into a profile edit page, see [Other Notes](https://wordpress.org/plugins/wp-user-avatar/#other_notes).
 
 You can specify a user with the shortcode, but you must have <code>edit_user</code> capability for that particular user.
 
@@ -161,7 +161,7 @@ Returns true if the user has a WP User Avatar image. You must specify the user I
 
 == Frequently Asked Questions ==
 
-Visit [WP User Avatar](http://wpuseravatar.com/) for more information and documentation.
+Visit [WP User Avatar](https://wpuseravatar.com/) for more information and documentation.
 
 = How do I use WP User Avatar? =
 
@@ -171,34 +171,34 @@ First, choose a theme that has avatar support. In your theme, you have a choice 
 
 1. Allows you to use the values "original", "large", "medium", or "thumbnail" for your avatar size.
 2. Doesn't add a fixed width and height to the image if you use the aforementioned values. This will give you more flexibility to resize the image with CSS.
-3. Allows you to use custom image sizes registered with [<code>add_image_size</code>](http://codex.wordpress.org/Function_Reference/add_image_size) (fixed width and height are added to the image).
+3. Allows you to use custom image sizes registered with [<code>add_image_size</code>](https://codex.wordpress.org/Function_Reference/add_image_size) (fixed width and height are added to the image).
 4. Optionally adds CSS classes "alignleft", "alignright", or "aligncenter" to position your avatar.
 5. Shows nothing if the user has no WP User Avatar image.
-6. Shows the user's [Gravatar](http://gravatar.com/) avatar or Default Avatar only if "Show Avatars" is enabled in your WP User Avatar settings.
+6. Shows the user's [Gravatar](https://gravatar.com/) avatar or Default Avatar only if "Show Avatars" is enabled in your WP User Avatar settings.
 
 = get_avatar =
 
 1. Requires you to enable "Show Avatars" in your WP User Avatar settings to show any avatars.
 2. Accepts only numeric values for your avatar size.
 3. Always adds a fixed width and height to your image. This may cause problems if you use responsive CSS in your theme.
-4. Shows the user's [Gravatar](http://gravatar.com/) avatar or Default Avatar if the user doesn't have a WP User Avatar image. (Choosing "Blank" as your Default Avatar still generates a transparent image file.)
+4. Shows the user's [Gravatar](https://gravatar.com/) avatar or Default Avatar if the user doesn't have a WP User Avatar image. (Choosing "Blank" as your Default Avatar still generates a transparent image file.)
 5. Requires no changes to your theme files if you are currently using <code>get_avatar</code>.
 
-[Read more about get_avatar in the WordPress Function Reference](http://codex.wordpress.org/Function_Reference/get_avatar).
+[Read more about get_avatar in the WordPress Function Reference](https://codex.wordpress.org/Function_Reference/get_avatar).
 
 = Can I create a custom Default Avatar? =
 In your WP User Avatar settings, you can upload your own Default Avatar.
 
 = Can I disable all Gravatar avatars? =
 
-In your WP User Avatar settings, you can select "Disable Gravatar — Use only local avatars" to disable all [Gravatar](http://gravatar.com/) avatars on your site and replace them with your Default Avatar. This will affect your registered users and non-registered comment authors.
+In your WP User Avatar settings, you can select "Disable Gravatar — Use only local avatars" to disable all [Gravatar](https://gravatar.com/) avatars on your site and replace them with your Default Avatar. This will affect your registered users and non-registered comment authors.
 
 = Can Contributors or Subscribers choose their own WP User Avatar image? =
 Yes, if you enable "Allow Contributors & Subscribers to upload avatars" in the WP User Avatar settings. These users will see a slightly different interface because they are allowed only one image upload.
 
 = Will WP User Avatar work with comment author avatars? =
 
-Yes, for registered users. Non-registered comment authors will show their [Gravatar](http://gravatar.com/) avatars or Default Avatar.
+Yes, for registered users. Non-registered comment authors will show their [Gravatar](https://gravatar.com/) avatars or Default Avatar.
 
 = Will WP User Avatar work with bbPress? =
 
@@ -218,7 +218,7 @@ For Administrators, WP User Avatar adds a column with avatar thumbnails to your 
 
 = Can I use the WP User Avatar uploader in a front page or widget? =
 
-Yes, you can use the <code>[avatar_upload]</code> shortcode to put a standalone uploader in a front page or widget. This uploader is only visible to logged-in users. If you want to integrate the uploader into a profile edit page, see [Other Notes](http://wordpress.org/plugins/wp-user-avatar/other_notes/).
+Yes, you can use the <code>[avatar_upload]</code> shortcode to put a standalone uploader in a front page or widget. This uploader is only visible to logged-in users. If you want to integrate the uploader into a profile edit page, see [Other Notes](https://wordpress.org/plugins/wp-user-avatar/#other_notes).
 
 You can specify a user with the shortcode, but you must have <code>'edit_user'</code> capability to change the user's avatar.
 
@@ -290,7 +290,7 @@ Outputs:
 = What other functions are available for WP User Avatar? =
 * <code>get_wp_user_avatar_src</code>: retrieves just the image URL
 * <code>has_wp_user_avatar</code>: checks if the user has a WP User Avatar image
-* [See example usage here](http://wordpress.org/extend/plugins/wp-user-avatar/installation/)
+* [See example usage here](https://wordpress.org/plugins/wp-user-avatar/#installation)
 
 = There's a call for donations in the WP User Avatar settings. How can I remove it? =
 I've spent countless hours developing this plugin for free. If you're able to give a donation I'd appreciate it, but it's by no means a requirement. You can remove the message by adding this to the <code>functions.php</code> file of your theme:
@@ -299,13 +299,13 @@ I've spent countless hours developing this plugin for free. If you're able to gi
 
 == Advanced Settings ==
 
-Visit [WP User Avatar](http://wpuseravatar.com/) for more information and documentation.
+Visit [WP User Avatar](https://wpuseravatar.com/) for more information and documentation.
 
 = Add WP User Avatar to your own profile edit page =
 
 You can use the [avatar_upload] shortcode to add a standalone uploader to any page. It's best to use this uploader by itself and without other profile fields.
 
-If you're building your own profile edit page with other fields, WP User Avatar is automatically added to the [show_user_profile](http://codex.wordpress.org/Plugin_API/Action_Reference/show_user_profile) and [edit_user_profile](http://codex.wordpress.org/Plugin_API/Action_Reference/show_user_profile) hooks. If you'd rather have WP User Avatar in its own section, you could add another hook:
+If you're building your own profile edit page with other fields, WP User Avatar is automatically added to the [show_user_profile](https://codex.wordpress.org/Plugin_API/Action_Reference/show_user_profile) and [edit_user_profile](https://codex.wordpress.org/Plugin_API/Action_Reference/show_user_profile) hooks. If you'd rather have WP User Avatar in its own section, you could add another hook:
 
 `do_action('edit_user_avatar', $current_user);`
 
@@ -406,7 +406,7 @@ This would output:
 == Changelog ==
 
 = 2.0.7 =
-* Improvement Fix: Removed languages files to be used from core wordpress language packs.
+* Improvement Fix: Removed languages files to be used from core WordPress language packs.
 
 = 2.0.6 =
 * Improvement Fix: Broken Jquery files from UI is resolved.
@@ -432,8 +432,8 @@ This would output:
 
 = 1.9.18 =
 * Bug Fix: Removed cron job dependency for excellent performance.
-* Bug Fix: Resolved gravatar was not showing on some special cases.
-* Bug Fix: Resolved speed problem in case of large number of users for multisite, bbpress and buddy press.
+* Bug Fix: Resolved Gravatar was not showing on some special cases.
+* Bug Fix: Resolved speed problem in case of large number of users for multisite, bbPress and BuddyPress.
 * Bug Fix: Resolved display custom avatar problem when default and customer avatar is same choosen.
 
 
@@ -448,8 +448,8 @@ This would output:
 
 
 = 1.9.14 =
-* Bug Fix: Speed Issues due to check many times if gravatar exist.
-* Bug Fix: Default gravatar issue for mustache and gravatar logo at front end and at buddypress pages
+* Bug Fix: Speed Issues due to check many times if Gravatar exist.
+* Bug Fix: Default Gravatar issue for mustache and Gravatar logo at front end and at BuddyPress pages
 * Bug Fix: Avatar while adding for existing user.
 * Bug Fix: UI issue when Gravatar option is enable/disable.
 
